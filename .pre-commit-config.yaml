@@ -1,0 +1,12 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+-   repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.6.8  # Use the latest version of Ruff from the repository
+    hooks:
+      - id: ruff
+        args: [--fix]  # Automatically fixes issues, including formatting
